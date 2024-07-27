@@ -1,7 +1,7 @@
 # OTP Generator
-```
+
 This project is a simple OTP (One-Time Password) generator that creates secure passwords using random integer numbers. It can be used for various applications where temporary passwords are required, such as two-factor authentication (2FA) or temporary access codes.
-```
+
 ## Features
 ```
 - Generates secure OTPs of a specified length.
@@ -11,63 +11,28 @@ This project is a simple OTP (One-Time Password) generator that creates secure p
 ```
 ## Installation
 ```
-To use the OTP generator, you need to have Node.js installed on your system. You can download Node.js from the official website: [nodejs.org](https://nodejs.org/).
-
 Clone this repository to your local machine:
-```
+
 ```bash
-git clone https://github.com/ShuvaGuchhait/otp-generator-js.git
-cd otp-generator-js
+git clone https://github.com/ShuvaGuchhait/otp-generator.git
+cd otp-generator
 ```
+
+Open `index.html` in your web browser to use the OTP generator.
 
 ## Usage
 ```
-You can use the OTP generator by running the `otpGenerator.js` script. Below is an example of how to generate an OTP:
-
-```javascript
-const otpGenerator = require('./otpGenerator');
-
-// Generate a 6-digit OTP
-const otp = otpGenerator.generateOtp(6);
-console.log(`Your OTP is: ${otp}`);
+1. Open the `index.html` file in your preferred web browser.
+2. Enter the desired length of the OTP in the input field.
+3. Click the "Generate OTP" button.
+4. The generated OTP will be displayed on the screen.
 ```
-
-### otpGenerator.js
-
-Here's a sample implementation of the `otpGenerator.js` script:
-
-```javascript
-function generateOtp(length) {
-    let otp = '';
-    for (let i = 0; i < length; i++) {
-        otp += Math.floor(Math.random() * 10);
-    }
-    return otp;
-}
-
-module.exports = {
-    generateOtp
-};
+## Project Structure
 ```
-
-## Examples
+- `index.html`: The main HTML file that contains the structure of the web page.
+- `styles.css`: The CSS file for styling the web page.
+- `otpGenerator.js`: The JavaScript file that generates the OTP and handles user interactions.
 ```
-Here are a few examples of how you can use the OTP generator:
-```
-### Generate a 4-digit OTP
-
-```javascript
-const otp = otpGenerator.generateOtp(4);
-console.log(`Your 4-digit OTP is: ${otp}`);
-```
-
-### Generate an 8-digit OTP
-
-```javascript
-const otp = otpGenerator.generateOtp(8);
-console.log(`Your 8-digit OTP is: ${otp}`);
-```
-
 ## Contributing
 ```
 Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
@@ -85,5 +50,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 ```
 - Inspired by the need for simple and secure OTP generation.
-- Built with JavaScript and love.
+- Built with HTML, CSS, JavaScript, and love.
 ```
